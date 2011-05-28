@@ -20,6 +20,14 @@
       </div>
 
       <div id="navigation">
+				<h2>About</h2>
+				<ul id="about">
+					<li>This is the development blog for <a href="http://twish.it">Twish</a>.
+						Twish is a Twitter enabled social wish list application that is 
+						currently being built by <a href="http://www.twitter.com/seangeo">Sean
+							Geoghegan</a>.
+					</li>
+				</ul>
         <h2>Pages</h2>
         <ul>
           <% page_links_for_navigation.each do |link| -%>
@@ -42,7 +50,15 @@
             <input type="hidden" name="sitesearch" value="<%= enki_config[:url] %>">
           </div>
         </form>
-      </div>
+				<h2>Twitter</h2>
+				<ul>
+					<li>
+						<a href="http://www.twitter.com/seangeo">
+							<img src="http://twitter-badges.s3.amazonaws.com/follow_me-b.png" alt="Follow me on Twitter"/>
+						</a>
+					</li>
+				</ul>
+			</div>
 
       <div id="footer"><%= enki_config[:title] %> &#169; <%= enki_config[:author, :name] %>. Valid <a href="http://validator.w3.org/check?uri=referer">HTML5</a> and <%= link_to "ATOM", "http://feedvalidator.org/check.cgi?url=#{enki_config[:url]}/posts.atom" %>. Powered by <a href="http://www.enkiblog.com" title="A Ruby on Rails blogging app for the fashionable developer">Enki</a>.</div>
     </div>

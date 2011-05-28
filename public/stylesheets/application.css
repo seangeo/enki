@@ -104,7 +104,7 @@ a:hover
 
 img
 {
-  border: solid 1px black;
+  border:0;
 }
 
 /* Two columns */
@@ -117,6 +117,10 @@ img
 
   border: none;
   padding: 5px;
+}
+
+#about {
+  color: gray;
 }
 
 #navigation h2
