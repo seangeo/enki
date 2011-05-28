@@ -17,4 +17,8 @@ module UrlHelper
       link_to(comment.author, comment.author_url, :class => 'openid')
     end
   end
+  
+  def disqus_identifier(post)
+    "twish_post_#{post.id}"
+  end
 end
