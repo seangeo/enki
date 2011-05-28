@@ -221,6 +221,10 @@ div.meta
   content: "";
 }
 
+iframe.twitter-share-button {
+  vertical-align: bottom;
+}
+
 h2
 {
   margin-bottom: 0px;

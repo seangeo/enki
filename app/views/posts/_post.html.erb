@@ -9,5 +9,10 @@
     <% unless post.tags.empty? -%>
     <li class="tags">Tagged <%= linked_tag_list(post.tags) %></li>
     <% end -%>
+		<li class="comments">
+			<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="seangeo" 
+			data-url="<%= post_path(post, :only_path => false)%>" data-text="<%= post.title %>">Tweet</a>
+			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</li>
   </ul>
 </div>
