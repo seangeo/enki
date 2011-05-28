@@ -39,7 +39,8 @@ body
 }
 
 /* Headings */
-h1#page_heading
+h1#page_heading,
+h1#page_heading a
 {
   font-size: 24pt;
 	color: #000 !important;
@@ -81,7 +82,7 @@ strong
 
 a 
 {
-  color: #000051;
+  color: #000088;
   
   text-decoration: none;    
 }
